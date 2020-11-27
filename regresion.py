@@ -9,7 +9,7 @@ def ingresarDatos(n, min, max, auto):
 	x,y = [], []
 	for i in range(1,n+1):
 		x.append(i)
-		valor = randint(min,max) if auto else int(input('n {}: '.format(i)))
+		valor = randint(min,max) if auto else float(input('n {}: '.format(i)))
 		y.append(valor)
 	return [x, y]
 
